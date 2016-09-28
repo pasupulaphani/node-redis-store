@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "description": "Redis store ready to scale with connection pool support",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pasupulaphani/redis-store.git"
+  },
+  "engines": {
+    "node": "*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,5 +21,10 @@
     "pool"
   ],
   "author": "pasupulaphani@gmail.com",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "generic-pool": "^2.4.2",
+    "redis": "^2.6.2"
+  }
 }
