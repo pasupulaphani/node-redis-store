@@ -1,11 +1,11 @@
 {
-  "name": "redis-store",
+  "name": "simple-redis-store",
   "version": "0.0.1",
   "description": "Redis store ready to scale with connection pool support",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/pasupulaphani/redis-store.git"
+    "url": "git+ssh://git@github.com/pasupulaphani/simple-redis-store.git"
   },
   "engines": {
     "node": "*"
@@ -33,9 +33,9 @@
     "should": "^11.1.0"
   },
   "bugs": {
-    "url": "https://github.com/pasupulaphani/redis-store/issues"
+    "url": "https://github.com/pasupulaphani/simple-redis-store/issues"
   },
-  "homepage": "https://github.com/pasupulaphani/redis-store#readme",
+  "homepage": "https://github.com/pasupulaphani/simple-redis-store#readme",
   "directories": {
     "test": "test"
   }
