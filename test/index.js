@@ -1,8 +1,16 @@
-var should = require("should");
+require("should");
+var RedisStore = require("../lib/redis_store");
 
-describe("dummy", function() {
-  it("verifies array contents", function() {
-    var array = [1, 2, 3, 4];
-    should(array).containEql(1);
+describe("redisStore", function () {
+
+  var redisStore = new RedisStore("testStore");
+
+  it("set", function (done) {
+
+    redisStore.set("key", "value")
+      .then(function (test) {
+        test.should.be.ok();
+        done();
+      });
   });
 });
