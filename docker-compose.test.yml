@@ -1,7 +1,0 @@
-sut:
-  build: .
-  dockerfile: Dockerfile.test
-  links:
-    - redis
-redis:
-  image: redis:3.0-alpine

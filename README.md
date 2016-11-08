@@ -17,4 +17,4 @@ Redis store ready to scale with node-pool support
 
 ### Run tests
 
-    docker-compose -f docker-compose.test.yml -p ci build
+    bash test.sh
