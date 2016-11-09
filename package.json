@@ -10,9 +10,15 @@
   "engines": {
     "node": "*"
   },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+  "bugs": {
+    "url": "https://github.com/pasupulaphani/simple-redis-store/issues"
   },
+  "homepage": "https://github.com/pasupulaphani/simple-redis-store#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": "pasupulaphani@gmail.com",
+  "license": "WTFPL",
   "keywords": [
     "redis",
     "cache",
@@ -20,8 +26,10 @@
     "connection",
     "pool"
   ],
-  "author": "pasupulaphani@gmail.com",
-  "license": "WTFPL",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "lint": "node_modules/.bin/eslint ./lib"
+  },
   "dependencies": {
     "bluebird": "^3.4.6",
     "debug": "^2.2.0",
@@ -29,14 +37,8 @@
     "redis": "^2.6.2"
   },
   "devDependencies": {
+    "eslint": "^3.9.1",
     "mocha": "^3.1.0",
     "should": "^11.1.0"
-  },
-  "bugs": {
-    "url": "https://github.com/pasupulaphani/simple-redis-store/issues"
-  },
-  "homepage": "https://github.com/pasupulaphani/simple-redis-store#readme",
-  "directories": {
-    "test": "test"
   }
 }
