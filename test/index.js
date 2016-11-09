@@ -3,12 +3,15 @@ var RedisStore = require("../lib/redis_store");
 
 describe("redisStore", function () {
 
-  var redisStore = new RedisStore("testStore");
+  var redisOptions = Object.assign({
+    host: process.env.REDIS_HOST || "127.0.0.1"
+  });
+  var store = new RedisStore("testStore", redisOptions);
 
   describe("set", function () {
     it("set", function (done) {
 
-      redisStore.set("key", "value")
+      store.set("key", "value")
         .then(function (test) {
           test.should.be.ok();
           done();
@@ -22,7 +25,7 @@ describe("redisStore", function () {
     var value = "alias: superman";
 
     before(function (done) {
-      redisStore.set(key, value)
+      store.set(key, value)
         .then(function () {
           done();
         });
@@ -30,7 +33,7 @@ describe("redisStore", function () {
 
     it("get", function (done) {
 
-      redisStore.get(key)
+      store.get(key)
         .then(function (v) {
           v.should.be.equal(value);
           done();
