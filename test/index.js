@@ -1,10 +1,9 @@
 require("should");
-var objectAssign = require("object-assign");
 var RedisStore = require("../lib/redis_store");
 
 describe("redisStore", function () {
 
-  var redisOptions = objectAssign({
+  var redisOptions = Object.assign({
     host: process.env.REDIS_HOST || "127.0.0.1"
   });
   var store = new RedisStore("testStore", redisOptions);

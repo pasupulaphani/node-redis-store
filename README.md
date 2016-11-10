@@ -8,6 +8,10 @@ Redis store ready to scale with node-pool support
 
 > Note: This lib is still in alpha
 
+## Prerequisites
+
+This module requires nodejs v4 or above as it has dependencies on various es6 components such as Map, Set, Promise etc.
+
 ### Getting started
 
     npm install simple-redis-store

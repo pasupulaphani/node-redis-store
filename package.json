@@ -27,19 +27,23 @@
     "pool"
   ],
   "scripts": {
+    "lint": "node_modules/.bin/eslint ./lib",
     "test": "./node_modules/.bin/mocha --reporter spec",
-    "lint": "node_modules/.bin/eslint ./lib"
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
     "bluebird": "^3.4.6",
     "debug": "^2.2.0",
     "generic-pool": "^2.4.2",
-    "object-assign": "^4.1.0",
+    "istanbul": "^0.4.5",
     "redis": "^2.6.2"
   },
   "devDependencies": {
+    "coveralls": "^2.11.14",
     "eslint": "^3.9.1",
     "mocha": "^3.1.0",
+    "mocha-lcov-reporter": "^1.2.0",
     "should": "^11.1.0"
   }
 }
