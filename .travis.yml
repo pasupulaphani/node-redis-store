@@ -1,7 +1,11 @@
 language: node_js
 node_js:
-  - "6"
+  - '0.12'
+  - '4'
+  - '5'
+  - '6'
 services:
   - redis-server
-after_success:
-  - coveralls
+addons:
+    code_climate:
+        repo_token: 2dbeb5d3bd1818ba72e485dca9e2778c3818a5f37e5034a79ea97759dff75524
