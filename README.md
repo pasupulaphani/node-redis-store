@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/pasupulaphani/simple-redis-store.svg?branch=master)](https://travis-ci.org/pasupulaphani/simple-redis-store)
 [![Coverage Status](https://coveralls.io/repos/github/pasupulaphani/simple-redis-store/badge.svg?branch=master)](https://coveralls.io/github/pasupulaphani/simple-redis-store?branch=master)
 [![dependencies Status](https://david-dm.org/pasupulaphani/simple-redis-store/status.svg)](https://david-dm.org/pasupulaphani/simple-redis-store)
+[![Donate to help support David development](http://img.shields.io/gratipay/pasupulaphani.svg?style=flat)](https://www.gittip.com/pasupulaphani/)
 
 # simple-redis-store
 Redis store ready to scale with node-pool support
