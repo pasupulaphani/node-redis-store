@@ -11,14 +11,14 @@ Redis store ready to scale with node-pool support
 
 ## Prerequisites
 
-This module requires nodejs v4 or above as it has dependencies on various es6 components such as Map, Set, Promise etc.
+This module requires nodejs v4 or above as it has dependencies on constious es6 components such as Map, Set, Promise etc.
 
 ### Getting started
 
     npm install simple-redis-store
 
-    var RedisStore = require("simple-redis-store");
-    var store = new RedisStore();
+    const RedisStore = require("simple-redis-store");
+    const store = new RedisStore();
 
     // set
     store.set("key", "value");

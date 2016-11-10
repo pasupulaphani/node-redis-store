@@ -129,7 +129,7 @@ bl@~1.1.2:
   dependencies:
     readable-stream "~2.0.5"
 
-bluebird@^3.4.6:
+bluebird:
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
 
@@ -549,9 +549,9 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-generic-pool@^2.4.2:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-2.4.3.tgz#780c36f69dfad05a5a045dd37be7adca11a4f6ff"
+generic-pool:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-3.1.1.tgz#930be4cc53ad075a81f0c9922402b8996e8df41b"
 
 getpass@^0.1.1:
   version "0.1.6"

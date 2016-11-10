@@ -1,12 +1,12 @@
 require("should");
-var RedisStore = require("../lib/redis_store");
+const RedisStore = require("../lib/redis_store");
 
 describe("redisStore", function () {
 
-  var redisOptions = Object.assign({
+  const redisOptions = Object.assign({
     host: process.env.REDIS_HOST || "127.0.0.1"
   });
-  var store = new RedisStore("testStore", redisOptions);
+  const store = new RedisStore("testStore", redisOptions);
 
   describe("set", function () {
     it("set", function (done) {
@@ -21,8 +21,8 @@ describe("redisStore", function () {
 
   describe("get", function () {
 
-    var key = "chuck-norris";
-    var value = "alias: superman";
+    const key = "chuck-norris";
+    const value = "alias: superman";
 
     before(function (done) {
       store.set(key, value)

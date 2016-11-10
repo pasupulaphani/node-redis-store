@@ -7,4 +7,5 @@ node_js:
 services:
   - redis-server
 after_success:
+  - npm run lint
   - npm run coveralls
