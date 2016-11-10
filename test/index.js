@@ -1,4 +1,5 @@
-require("should");
+const should = require("should");
+const Bluebird = require("bluebird");
 const RedisStore = require("../lib/redis_store");
 
 describe("redisStore", function () {
@@ -8,21 +9,10 @@ describe("redisStore", function () {
   });
   const store = new RedisStore("testStore", redisOptions);
 
-  describe("set", function () {
-    it("set", function (done) {
-
-      store.set("key", "value")
-        .then(function (test) {
-          test.should.be.ok();
-          done();
-        });
-    });
-  });
-
   describe("get", function () {
 
     const key = "chuck-norris";
-    const value = "alias: superman";
+    const value = "superman";
 
     before(function (done) {
       store.set(key, value)
@@ -38,6 +28,46 @@ describe("redisStore", function () {
           v.should.be.equal(value);
           done();
         });
+    });
+  });
+
+  describe("set", function () {
+    it("set", function (done) {
+
+      store.set("key", "value")
+        .then(function (test) {
+          test.should.be.ok();
+          done();
+        });
+    });
+  });
+
+  describe("setex", function () {
+    it("setex", function (done) {
+
+      const key = "shortLivedKey";
+      const value = "expireIn10ms";
+      const ttlInSeconds = 1;
+
+      store.setex(key, value, ttlInSeconds)
+        .then(function (test) {
+          test.should.be.ok();
+        });
+
+      store.get(key)
+        .then(function (v) {
+          v.should.be.equal(value);
+        });
+
+      Bluebird.delay(ttlInSeconds * 1000)
+        .done(() => {
+          return store.get(key)
+            .then(function (v) {
+              should(v).be.null;
+              done();
+            });
+        });
+
     });
   });
 });
