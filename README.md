@@ -26,9 +26,3 @@ This module requires nodejs v4 or above as it has dependencies on various es6 co
 ### Run tests
 
     bash test.sh
-
-
-### todo
-
-- acquire timeout
-- move to es7 and support compile to others to support
