@@ -7,7 +7,7 @@
 # simple-redis-store
 Redis store ready to scale with node-pool support
 
-> Note: This lib is still in alpha
+> Note: This lib is in beta
 
 ## Prerequisites
 
