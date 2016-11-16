@@ -129,7 +129,7 @@ bl@~1.1.2:
   dependencies:
     readable-stream "~2.0.5"
 
-bluebird:
+bluebird, bluebird@^3.4.6:
   version "3.4.6"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.4.6.tgz#01da8d821d87813d158967e743d5fe6c62cf8c0f"
 
@@ -549,7 +549,7 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-generic-pool:
+generic-pool@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-3.1.1.tgz#930be4cc53ad075a81f0c9922402b8996e8df41b"
 
@@ -1258,6 +1258,15 @@ should@^11.1.0:
     should-type "^1.4.0"
     should-type-adaptors "^1.0.1"
     should-util "^1.0.0"
+
+simple-redis-pool:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/simple-redis-pool/-/simple-redis-pool-1.0.0.tgz#0816287694e72347a8c42c250cc234c426253ea4"
+  dependencies:
+    bluebird "^3.4.6"
+    debug "^2.2.0"
+    generic-pool "^3.1.1"
+    redis "^2.6.2"
 
 slice-ansi@0.0.4:
   version "0.0.4"
