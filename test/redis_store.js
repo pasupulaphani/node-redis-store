@@ -185,21 +185,23 @@ describe("redisStore", function () {
 
   describe("keys", function () {
 
-    beforeEach(function (done) {
+    const keyValues = {key1: "value1", key2: "value2"};
+
+    before(function (done) {
       store.deleteAll()
         .then(() => done());
     });
 
+    beforeEach(function (done) {
+      Promise.all(Object.keys(keyValues)
+        .map(key => store.set(key, keyValues[key]))
+      ).then(() => done());
+    });
+
     it("should return all the keys", function (done) {
 
-      const keyValues = {key1: "value1", key2: "value2"};
-
-      for (var key in keyValues) {
-        store.set(key, keyValues[key]);
-      }
-
       store.keys()
-        .then(function (keys) {
+        .then(keys => {
           keyValues.should.have.keys(keys[0], keys[1]);
           done();
         });
@@ -207,14 +209,8 @@ describe("redisStore", function () {
 
     it("should return all the keys matches pattern", function (done) {
 
-      const keyValues = {key1: "value1", key2: "value2"};
-
-      for (var key in keyValues) {
-        store.set(key, keyValues[key]);
-      }
-
       store.keys("key[2]")
-        .then(function (keys) {
+        .then(keys => {
           keys.should.containEql("key2");
           done();
         });
@@ -223,12 +219,12 @@ describe("redisStore", function () {
 
   describe("deleteAll", function () {
 
-    beforeEach(function () {
+    beforeEach(function (done) {
       const keyValues = {key1: "value1", key2: "value2"};
 
-      for (var key in keyValues) {
-        store.set(key, keyValues[key]);
-      }
+      Promise.all(Object.keys(keyValues)
+        .map(key => store.set(key, keyValues[key]))
+      ).then(() => done());
     });
 
     it("should delete all the keys", function (done) {
@@ -236,9 +232,8 @@ describe("redisStore", function () {
       store.deleteAll()
         .then(function (v) {
           v.should.be.ok();
-        });
-
-      store.keys()
+        })
+        .then(store.keys)
         .then(function (keys) {
           keys.should.be.empty();
           done();
@@ -250,12 +245,24 @@ describe("redisStore", function () {
       store.deleteAll("key[2]")
         .then(function (v) {
           v.should.be.ok();
-        });
-
-      store.keys()
+        })
+        .then(store.keys)
         .then(function (keys) {
           keys.should.be.not.empty();
           keys.should.not.containEql("key2");
+          done();
+        });
+    });
+
+    it("should not delete when nothing matches", function (done) {
+
+      store.deleteAll()
+        .then(function (v) {
+          v.should.be.ok();
+        })
+        .then(() => store.deleteAll("nonExistingKey"))
+        .then(function (v) {
+          v.should.be.ok();
           done();
         });
     });
