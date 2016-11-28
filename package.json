@@ -33,16 +33,16 @@
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "debug": "^2.2.0",
-    "simple-redis-pool": "^1.0.0"
+    "debug": "^2.3.3",
+    "simple-redis-pool": "^2.0.0"
   },
   "devDependencies": {
     "bluebird": "^3.4.6",
-    "coveralls": "^2.11.14",
-    "eslint": "^3.9.1",
+    "coveralls": "^2.11.15",
+    "eslint": "^3.11.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.1.0",
+    "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.2.0",
-    "should": "^11.1.0"
+    "should": "^11.1.1"
   }
 }
