@@ -1,6 +1,6 @@
 {
   "name": "simple-redis-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Redis store ready to scale with connection pool support",
   "main": "index.js",
   "repository": {
