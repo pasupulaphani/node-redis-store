@@ -48,7 +48,7 @@ Redis store ready to scale with node-pool support [![See on Github](https://gith
         <span class="param-type">string</span>
       </td>
       <td class="description last">
-        <p>Name your pool</p>
+        <p>Name your store</p>
       </td>
     </tr>
     <tr>
