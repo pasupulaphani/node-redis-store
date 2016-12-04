@@ -5,23 +5,26 @@
 [![Gratipay donate button](https://img.shields.io/badge/gratipay-donate-yellow.svg?style=flat-square)](https://gratipay.com/simple-redis-store/)
 
 # simple-redis-store
-Redis store ready to scale with node-pool support
-
-> Note: This lib is in beta
+Redis store ready to scale with node-pool support [![See on Github](https://github.com/themes/tactile/images/octocat-icon.png)](https://github.com/pasupulaphani/simple-redis-store)
 
 ## Prerequisites
 
-This module requires nodejs v4 or above as it has dependencies on es6 components such as Map, Set, Promise etc.
+```node >= 4``` This module requires nodejs v4 or above as it has dependencies on es6 components such as Map, Set, Promise etc.
 
 ### Getting started
 
+```
     npm install simple-redis-store
+```
 
+#### Usage
+```
     const RedisStore = require("simple-redis-store");
     const store = new RedisStore();
 
     // set
     store.set("key", "value");
+```
 
 #### API
 
@@ -29,12 +32,54 @@ This module requires nodejs v4 or above as it has dependencies on es6 components
 
 #### `options` object properties
 
-| Property  | Default   | Description |
-|-----------|-----------|-------------|
-| name      | Random unique string | Name your pool |
-| redisOptions      | ```{url: redis://127.0.0.1:6379}```      | opts from  https://github.com/NodeRedis/node_redis#options-object-properties |
-| poolOptions      | null      | opts from https://github.com/coopernurse/node-pool#createpool |
-| logger       | null      | Inject your custom logger |
+
+<table class="params">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name"><code>name</code></td>
+      <td class="type">
+        <span class="param-type">string</span>
+      </td>
+      <td class="description last">
+        <p>Name your pool</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="name"><code>redisOptions</code></td>
+      <td class="type">
+        <span class="param-type">object</span>
+      </td>
+      <td class="description last">
+        <p>opts from <a href="https://github.com/NodeRedis/node_redis#options-object-properties">node_redis#options-object-properties</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="name"><code>poolOptions</code></td>
+      <td class="type">
+        <span class="param-type">object</span>
+      </td>
+      <td class="description last">
+        <p>opts from <a href="https://github.com/coopernurse/node-pool#createpool">node-pool#createpool</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="name"><code>logger</code></td>
+      <td class="type">
+        <span class="param-type">object</span>
+      </td>
+      <td class="description last">
+        <p>Inject your custom logger</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### Run tests
@@ -71,3 +116,7 @@ These amazing people have contributed code to this project:
 *   [Oliver Brooks](https://github.com/oliverbrooks)
 
 [Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/pasupulaphani/simple-redis-store/blob/master/CONTRIBUTING.md)
+
+<br />
+
+---
