@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+    <section class="readme">
+        <article><p><a href="https://npmjs.org/package/simple-redis-store"><img src="http://img.shields.io/npm/v/simple-redis-store.svg?style=flat-square" alt="npm version"></a>
+<a href="https://travis-ci.org/pasupulaphani/simple-redis-store"><img src="https://travis-ci.org/pasupulaphani/simple-redis-store.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/github/pasupulaphani/simple-redis-store?branch=master"><img src="https://coveralls.io/repos/github/pasupulaphani/simple-redis-store/badge.svg?branch=master" alt="Coverage Status"></a>
+<a href="https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95"><img src="https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95/badge.svg?style=flat-square" alt="Dependency Status"></a>
+<a href="https://gratipay.com/simple-redis-store/"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg?style=flat-square" alt="Gratipay donate button"></a></p>
+<h1>simple-redis-store</h1><p>Redis store ready to scale with node-pool support</p>
+<blockquote>
+<p>Note: This lib is in beta</p>
+</blockquote>
+<h2>Prerequisites</h2><p>This module requires nodejs v4 or above as it has dependencies on es6 components such as Map, Set, Promise etc.</p>
+<h3>Getting started</h3><pre class="prettyprint source"><code>npm install simple-redis-store
+
+const RedisStore = require(&quot;simple-redis-store&quot;);
+const store = new RedisStore();
+
+// set
+store.set(&quot;key&quot;, &quot;value&quot;);</code></pre><h4>API</h4><ul>
+<li>RedisStore([options])</li>
+</ul>
+<h4><code>options</code> object properties</h4><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>Random unique string</td>
+<td>Name your pool</td>
+</tr>
+<tr>
+<td>redisOptions</td>
+<td><code>{url: redis://127.0.0.1:6379}</code></td>
+<td>opts from  https://github.com/NodeRedis/node_redis#options-object-properties</td>
+</tr>
+<tr>
+<td>poolOptions</td>
+<td>null</td>
+<td>opts from https://github.com/coopernurse/node-pool#createpool</td>
+</tr>
+<tr>
+<td>logger</td>
+<td>null</td>
+<td>Inject your custom logger</td>
+</tr>
+</tbody>
+</table>
+<h3>Run tests</h3><pre class="prettyprint source"><code>bash test.sh</code></pre><h2>Contribute</h2><p><a href="https://github.com/pasupulaphani/simple-redis-store/blob/master/CONTRIBUTING.md">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a></p>
+<h2>Backers</h2><h3>Maintainers</h3><p>These amazing people are maintaining this project:</p>
+<ul>
+<li><a href="https://github.com/pasupulaphani">Phani</a> — <a href="https://github.com/pasupulaphani/simple-redis-store/commits?author=pasupulaphani">view contributions</a></li>
+</ul>
+<h3>Sponsors</h3><p>No sponsors yet! Will you be the first?</p>
+<p><a href="http://patreon.com/phaninder" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button"></a>
+<a href="https://gratipay.com/~pasupulaphani/" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button"></a>
+<a href="https://flattr.com/profile/pasupulaphani" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button"></a>
+<!-- [![PayPal donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://phaninder.com/paypal "Donate to this project using Paypal") -->
+<!-- [![Bitcoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://phaninder.com/bitcoin "Donate once-off to this project using Bitcoin") -->
+<!-- [![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](https://phaninder.com/wishlist "Buy an item on our wishlist for us") --></p>
+<h3>Contributors</h3><p>These amazing people have contributed code to this project:</p>
+<ul>
+<li><a href="https://github.com/oliverbrooks">Oliver Brooks</a></li>
+</ul>
+<p><a href="https://github.com/pasupulaphani/simple-redis-store/blob/master/CONTRIBUTING.md">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a></p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
