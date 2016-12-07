@@ -1347,9 +1347,9 @@ should@^11.1.1:
     should-type-adaptors "^1.0.1"
     should-util "^1.0.0"
 
-simple-redis-pool@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/simple-redis-pool/-/simple-redis-pool-2.1.0.tgz#8e38dc8a74f458e9e66731020a70975bca95032d"
+simple-redis-pool@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/simple-redis-pool/-/simple-redis-pool-2.2.0.tgz#9dbb3c74cc2ee27e6140fc3b0d228e7f14c9b67a"
   dependencies:
     bluebird "^3.4.6"
     debug "^2.3.3"

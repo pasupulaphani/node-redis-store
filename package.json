@@ -42,7 +42,7 @@
   "dependencies": {
     "debug": "^2.3.3",
     "lodash.pick": "^4.4.0",
-    "simple-redis-pool": "^2.1.0"
+    "simple-redis-pool": "^2.2.0"
   },
   "devDependencies": {
     "bluebird": "^3.4.6",
