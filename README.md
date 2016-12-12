@@ -1,11 +1,11 @@
-[![npm version](http://img.shields.io/npm/v/simple-redis-store.svg?style=flat-square)](https://npmjs.org/package/simple-redis-store)
+[![npm version](https://img.shields.io/npm/v/simple-redis-store.svg?style=flat-square)](https://npmjs.org/package/simple-redis-store)
 [![Build Status](https://travis-ci.org/pasupulaphani/simple-redis-store.svg?branch=master)](https://travis-ci.org/pasupulaphani/simple-redis-store)
 [![Coverage Status](https://coveralls.io/repos/github/pasupulaphani/simple-redis-store/badge.svg?branch=master)](https://coveralls.io/github/pasupulaphani/simple-redis-store?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95)
 [![Gratipay donate button](https://img.shields.io/badge/gratipay-donate-yellow.svg?style=flat-square)](https://gratipay.com/simple-redis-store/)
 
 # simple-redis-store
-Redis store ready to scale with node-pool support [![See on Github](https://github.com/themes/tactile/images/octocat-icon.png)](https://github.com/pasupulaphani/simple-redis-store)
+Simplistic node redis store ready can scale with generic-pool support [![See on Github](https://github.com/themes/tactile/images/octocat-icon.png)](https://github.com/pasupulaphani/simple-redis-store)
 
 ## Prerequisites
 
@@ -118,5 +118,5 @@ These amazing people have contributed code to this project:
 [Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/pasupulaphani/simple-redis-store/blob/master/CONTRIBUTING.md)
 
 <br />
-
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-57413413-4', 'auto');ga('send', 'pageview');</script>
 ---
