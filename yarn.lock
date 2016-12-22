@@ -298,15 +298,9 @@ debug@2.2.0:
   dependencies:
     ms "0.7.1"
 
-debug@^2.1.1, debug@^2.5.1:
+debug@^2.1.1, debug@^2.2.0, debug@^2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.5.1.tgz#9107bb4a506052ec2a02314bc606313ed2b921c1"
-  dependencies:
-    ms "0.7.2"
-
-debug@^2.2.0, debug@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.3.3.tgz#40c453e67e6e13c901ddec317af8986cda9eff8c"
   dependencies:
     ms "0.7.2"
 
@@ -597,9 +591,9 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-generic-pool@3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-3.1.4.tgz#38816268c374fd3aa731d5a1b9bde8fec4bcef92"
+generic-pool@3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/generic-pool/-/generic-pool-3.1.5.tgz#32c877cb901df8e08c4886dee61ef1c66791fae8"
 
 getpass@^0.1.1:
   version "0.1.6"
@@ -1352,13 +1346,13 @@ should@^11.1.2:
     should-type-adaptors "^1.0.1"
     should-util "^1.0.0"
 
-simple-redis-pool@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/simple-redis-pool/-/simple-redis-pool-2.4.2.tgz#1856b6f38d7f041900acc95e7bdcc711a26b1cf6"
+simple-redis-pool@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/simple-redis-pool/-/simple-redis-pool-2.6.0.tgz#fd6572b2ef8b2d6dadd815c09614e321045fbd5c"
   dependencies:
-    debug "^2.3.3"
+    debug "^2.5.1"
     es6-promisify "^5.0.0"
-    generic-pool "3.1.4"
+    generic-pool "3.1.5"
     lodash.pick "^4.4.0"
     redis "^2.6.3"
     retry-as-promised "^2.2.0"
