@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "debug": "^2.6.0",
+    "is-json": "^2.0.1",
     "lodash.pick": "^4.4.0",
     "node-redis-connection-pool": "^2.9.0"
   },

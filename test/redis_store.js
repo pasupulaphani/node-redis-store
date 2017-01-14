@@ -69,6 +69,21 @@ describe("redisStore", () => {
         .should.eventually.be.equal(value);
     });
 
+    it("should retrieve parsed json", () => {
+
+      const key = "chuck-norris";
+      const value = {
+        type: "superman"
+      };
+
+      return store.set(key, value)
+        .then(test => {
+          test.should.be.ok();
+        })
+        .then(() => store.get(key))
+        .should.eventually.be.eql(value);
+    });
+
     it("should return null if key doesn't exist", () => {
 
       return store.get("unknownKey")
@@ -94,6 +109,34 @@ describe("redisStore", () => {
         })
         .then(() => store.get(key))
         .should.eventually.be.equal(value);
+    });
+
+    it("should store json", () => {
+
+      const key = "key";
+      const value = {
+        type: "json"
+      };
+
+      return store.set(key, value)
+        .then(test => {
+          test.should.be.ok();
+        })
+        .then(() => store.get(key))
+        .should.eventually.be.eql(value);
+    });
+
+    it("should store array", () => {
+
+      const key = "key";
+      const value = ["json", "node"];
+
+      return store.set(key, value)
+        .then(test => {
+          test.should.be.ok();
+        })
+        .then(() => store.get(key))
+        .should.eventually.be.eql(value);
     });
 
     it("should store with an expiry if ttl set", () => {
