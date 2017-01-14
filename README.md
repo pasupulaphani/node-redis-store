@@ -24,7 +24,7 @@ Simplistic node redis store ready can scale with generic-pool support
     const store = new RedisStore();
 
     // set
-    store.set("key", "value");
+    store.set("key", {a: "b"});
 ```
 
 #### API
