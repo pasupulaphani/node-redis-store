@@ -1,19 +1,19 @@
 {
-  "name": "simple-redis-store",
+  "name": "node-redis-store",
   "version": "0.7.0",
   "description": "Simplistic node redis store ready can scale with generic-pool support",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/pasupulaphani/simple-redis-store.git"
+    "url": "git+ssh://git@github.com/pasupulaphani/node-redis-store.git"
   },
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/pasupulaphani/simple-redis-store/issues"
+    "url": "https://github.com/pasupulaphani/node-redis-store/issues"
   },
-  "homepage": "https://github.com/pasupulaphani/simple-redis-store#readme",
+  "homepage": "https://github.com/pasupulaphani/node-redis-store#readme",
   "directories": {
     "test": "test"
   },

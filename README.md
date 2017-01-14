@@ -1,11 +1,11 @@
-[![npm version](https://img.shields.io/npm/v/simple-redis-store.svg?style=flat-square)](https://npmjs.org/package/simple-redis-store)
-[![Build Status](https://travis-ci.org/pasupulaphani/simple-redis-store.svg?branch=master)](https://travis-ci.org/pasupulaphani/simple-redis-store)
-[![Coverage Status](https://coveralls.io/repos/github/pasupulaphani/simple-redis-store/badge.svg?branch=master)](https://coveralls.io/github/pasupulaphani/simple-redis-store?branch=master)
+[![npm version](https://img.shields.io/npm/v/node-redis-store.svg?style=flat-square)](https://npmjs.org/package/node-redis-store)
+[![Build Status](https://travis-ci.org/pasupulaphani/node-redis-store.svg?branch=master)](https://travis-ci.org/pasupulaphani/node-redis-store)
+[![Coverage Status](https://coveralls.io/repos/github/pasupulaphani/node-redis-store/badge.svg?branch=master)](https://coveralls.io/github/pasupulaphani/node-redis-store?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95)
-[![Gratipay donate button](https://img.shields.io/badge/gratipay-donate-yellow.svg?style=flat-square)](https://gratipay.com/simple-redis-store/)
+[![Gratipay donate button](https://img.shields.io/badge/gratipay-donate-yellow.svg?style=flat-square)](https://gratipay.com/node-redis-store/)
 
-# simple-redis-store
-Simplistic node redis store ready can scale with generic-pool support [![See on Github](https://github.com/themes/tactile/images/octocat-icon.png)](https://github.com/pasupulaphani/simple-redis-store)
+# node-redis-store
+Simplistic node redis store ready can scale with generic-pool support [![See on Github](https://github.com/themes/tactile/images/octocat-icon.png)](https://github.com/pasupulaphani/node-redis-store)
 
 ## Prerequisites
 
@@ -14,12 +14,12 @@ Simplistic node redis store ready can scale with generic-pool support [![See on 
 ### Getting started
 
 ```
-    npm install simple-redis-store
+    npm install node-redis-store
 ```
 
 #### Usage
 ```
-    const RedisStore = require("simple-redis-store");
+    const RedisStore = require("node-redis-store");
     const store = new RedisStore();
 
     // set
@@ -88,7 +88,7 @@ Simplistic node redis store ready can scale with generic-pool support [![See on 
 
 ## Contribute
 
-[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/pasupulaphani/simple-redis-store/blob/master/CONTRIBUTING.md)
+[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/pasupulaphani/node-redis-store/blob/master/CONTRIBUTING.md)
 
 ## Backers
 
@@ -96,7 +96,7 @@ Simplistic node redis store ready can scale with generic-pool support [![See on 
 
 These amazing people are maintaining this project:
 
-*   [Phani](https://github.com/pasupulaphani) — [view contributions](https://github.com/pasupulaphani/simple-redis-store/commits?author=pasupulaphani)
+*   [Phani](https://github.com/pasupulaphani) — [view contributions](https://github.com/pasupulaphani/node-redis-store/commits?author=pasupulaphani)
 
 ### Sponsors
 
@@ -115,7 +115,7 @@ These amazing people have contributed code to this project:
 
 *   [Oliver Brooks](https://github.com/oliverbrooks)
 
-[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/pasupulaphani/simple-redis-store/blob/master/CONTRIBUTING.md)
+[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/pasupulaphani/node-redis-store/blob/master/CONTRIBUTING.md)
 
 <br />
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-57413413-4', 'auto');ga('send', 'pageview');</script>
