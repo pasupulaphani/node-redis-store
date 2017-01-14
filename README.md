@@ -1,11 +1,12 @@
 [![npm version](https://img.shields.io/npm/v/node-redis-store.svg?style=flat-square)](https://npmjs.org/package/node-redis-store)
 [![Build Status](https://travis-ci.org/pasupulaphani/node-redis-store.svg?branch=master)](https://travis-ci.org/pasupulaphani/node-redis-store)
 [![Coverage Status](https://coveralls.io/repos/github/pasupulaphani/node-redis-store/badge.svg?branch=master)](https://coveralls.io/github/pasupulaphani/node-redis-store?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/583c5221d2fd570034b96f95)
-[![Gratipay donate button](https://img.shields.io/badge/gratipay-donate-yellow.svg?style=flat-square)](https://gratipay.com/node-redis-store/)
+[![Dependency Status](https://www.versioneye.com/user/projects/587984ab5450ea0042210137/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/587984ab5450ea0042210137)
+[![Gratipay donate button](https://img.shields.io/badge/gratipay-donate-yellow.svg?style=flat-square)](https://gratipay.com/simple-redis-store/)
 
-# node-redis-store
-Simplistic node redis store ready can scale with generic-pool support [![See on Github](https://github.com/themes/tactile/images/octocat-icon.png)](https://github.com/pasupulaphani/node-redis-store)
+# node-redis-store [![See on Github](https://github.com/themes/tactile/images/octocat-icon.png)](https://github.com/pasupulaphani/node-redis-store)
+
+Simplistic node redis store ready can scale with generic-pool support
 
 ## Prerequisites
 
