@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/node-cache-store.svg)](https://badge.fury.io/js/node-cache-store)
+[![npm version](https://badge.fury.io/js/node-redis-store.svg)](https://badge.fury.io/js/node-redis-store)
 [![Build Status](https://travis-ci.org/pasupulaphani/node-redis-store.svg?branch=master)](https://travis-ci.org/pasupulaphani/node-redis-store)
 [![Coverage Status](https://coveralls.io/repos/github/pasupulaphani/node-redis-store/badge.svg?branch=master)](https://coveralls.io/github/pasupulaphani/node-redis-store?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/587984ab5450ea0042210137/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/587984ab5450ea0042210137)
