@@ -45,7 +45,7 @@
     "debug": "^3.1.0",
     "is-json": "^2.0.1",
     "lodash.pick": "^4.4.0",
-    "node-redis-connection-pool": "^2.9.0"
+    "node-redis-connection-pool": "^3.0.0"
   },
   "devDependencies": {
     "bluebird": "^3.5.1",
